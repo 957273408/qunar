@@ -2,7 +2,7 @@
   <div>
     <h2 class="recomment-top">热门推荐</h2>
     <ul>
-      <li class="item" v-for="(item, index) in data" :key="index">
+      <li class="item" v-for="(item, index) in list" :key="index">
         <img
           :src="item.url"
           alt
@@ -20,52 +20,53 @@
 <script>
 export default {
   name: "recommend",
+  props:['list'],
   data() {
     return {
-      data: [
-        {
-          id: 1,
-          url:
-            "https://img.alicdn.com/imgextra/i2/252339290/TB29PYUXnIlyKJjSZFrXXXn2VXa_!!252339290-0-beehive-scenes.jpg_180x180xzq90.jpg_.webp",
-          title:'大连圣亚海洋世界',
-          content:"浪漫大连首站,浪漫的海洋主题公园"
-        },
-        {
-          id: 2,
-          url:
-            "https://img.alicdn.com/imgextra/i2/252339290/TB29PYUXnIlyKJjSZFrXXXn2VXa_!!252339290-0-beehive-scenes.jpg_180x180xzq90.jpg_.webp",
-          title:'大连圣亚海洋世界',
-          content:"浪漫大连首站,浪漫的海洋主题公园"
-        },
-        {
-          id: 3,
-          url:
-            "https://img.alicdn.com/imgextra/i2/252339290/TB29PYUXnIlyKJjSZFrXXXn2VXa_!!252339290-0-beehive-scenes.jpg_180x180xzq90.jpg_.webp",
-          title:'大连圣亚海洋世界',
-          content:"浪漫大连首站,浪漫的海洋主题公园"
-        },
-        {
-          id: 4,
-          url:
-            "https://img.alicdn.com/imgextra/i2/252339290/TB29PYUXnIlyKJjSZFrXXXn2VXa_!!252339290-0-beehive-scenes.jpg_180x180xzq90.jpg_.webp",
-          title:'大连圣亚海洋世界',
-          content:"浪漫大连首站,浪漫的海洋主题公园"
-        },
-        {
-          id: 5,
-          url:
-            "https://img.alicdn.com/imgextra/i2/252339290/TB29PYUXnIlyKJjSZFrXXXn2VXa_!!252339290-0-beehive-scenes.jpg_180x180xzq90.jpg_.webp",
-          title:'大连圣亚海洋世界',
-          content:"浪漫大连首站,浪漫的海洋主题公园"
-        },
-        {
-          id: 6,
-          url:
-            "https://img.alicdn.com/imgextra/i2/252339290/TB29PYUXnIlyKJjSZFrXXXn2VXa_!!252339290-0-beehive-scenes.jpg_180x180xzq90.jpg_.webp",
-          title:'大连圣亚海洋世界',
-          content:"浪漫大连首站,浪漫的海洋主题公园"
-        },
-      ]
+      // data: [
+      //   {
+      //     id: 1,
+      //     url:
+      //       "https://img.alicdn.com/imgextra/i2/252339290/TB29PYUXnIlyKJjSZFrXXXn2VXa_!!252339290-0-beehive-scenes.jpg_180x180xzq90.jpg_.webp",
+      //     title:'大连圣亚海洋世界',
+      //     content:"浪漫大连首站,浪漫的海洋主题公园"
+      //   },
+      //   {
+      //     id: 2,
+      //     url:
+      //       "https://img.alicdn.com/imgextra/i2/252339290/TB29PYUXnIlyKJjSZFrXXXn2VXa_!!252339290-0-beehive-scenes.jpg_180x180xzq90.jpg_.webp",
+      //     title:'大连圣亚海洋世界',
+      //     content:"浪漫大连首站,浪漫的海洋主题公园"
+      //   },
+      //   {
+      //     id: 3,
+      //     url:
+      //       "https://img.alicdn.com/imgextra/i2/252339290/TB29PYUXnIlyKJjSZFrXXXn2VXa_!!252339290-0-beehive-scenes.jpg_180x180xzq90.jpg_.webp",
+      //     title:'大连圣亚海洋世界',
+      //     content:"浪漫大连首站,浪漫的海洋主题公园"
+      //   },
+      //   {
+      //     id: 4,
+      //     url:
+      //       "https://img.alicdn.com/imgextra/i2/252339290/TB29PYUXnIlyKJjSZFrXXXn2VXa_!!252339290-0-beehive-scenes.jpg_180x180xzq90.jpg_.webp",
+      //     title:'大连圣亚海洋世界',
+      //     content:"浪漫大连首站,浪漫的海洋主题公园"
+      //   },
+      //   {
+      //     id: 5,
+      //     url:
+      //       "https://img.alicdn.com/imgextra/i2/252339290/TB29PYUXnIlyKJjSZFrXXXn2VXa_!!252339290-0-beehive-scenes.jpg_180x180xzq90.jpg_.webp",
+      //     title:'大连圣亚海洋世界',
+      //     content:"浪漫大连首站,浪漫的海洋主题公园"
+      //   },
+      //   {
+      //     id: 6,
+      //     url:
+      //       "https://img.alicdn.com/imgextra/i2/252339290/TB29PYUXnIlyKJjSZFrXXXn2VXa_!!252339290-0-beehive-scenes.jpg_180x180xzq90.jpg_.webp",
+      //     title:'大连圣亚海洋世界',
+      //     content:"浪漫大连首站,浪漫的海洋主题公园"
+      //   },
+      // ]
     }
   }
 };

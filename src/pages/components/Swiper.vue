@@ -15,33 +15,36 @@
 <script>
 export default {
   name: "carrousel",
+  props:["list"],
   data() {
     return {
-      list: [
-        {
-          id: new Date(),
-          url:
-            "//img.alicdn.com/tps/i4/TB14ZyQCwHqK1RjSZFkSut.WFXa.jpg_q90_.webp"
-        },
-        {
-          id: new Date(),
-          url:
-            "https://img.alicdn.com/simba/img/TB1tvNyC9zqK1RjSZFLSuwn2XXa.jpg"
-        },
-        {
-          id: new Date(),
-          url:
-            "https://img.alicdn.com/simba/img/TB1gQswzRLoK1RjSZFuSutn0XXa.jpg"
-        },
-        {
-          id: new Date(),
-          url:
-            "//img.alicdn.com/tps/i4/TB1diKiCPDpK1RjSZFrSuu78VXa.jpg_q90_.webp"
-        }
-      ],
+      // list: [
+      //   {
+      //     id: new Date(),
+      //     url:
+      //       "//img.alicdn.com/tps/i4/TB14ZyQCwHqK1RjSZFkSut.WFXa.jpg_q90_.webp"
+      //   },
+      //   {
+      //     id: new Date(),
+      //     url:
+      //       "https://img.alicdn.com/simba/img/TB1tvNyC9zqK1RjSZFLSuwn2XXa.jpg"
+      //   },
+      //   {
+      //     id: new Date(),
+      //     url:
+      //       "https://img.alicdn.com/simba/img/TB1gQswzRLoK1RjSZFuSutn0XXa.jpg"
+      //   },
+      //   {
+      //     id: new Date(),
+      //     url:
+      //       "//img.alicdn.com/tps/i4/TB1diKiCPDpK1RjSZFrSuu78VXa.jpg_q90_.webp"
+      //   }
+      // ],
       swiperOption: {
         pagination: {
-          el: ".swiper-pagination"
+          el: ".swiper-pagination",
+          autoplay:true,
+          
         }
       }
     };
