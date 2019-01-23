@@ -50,19 +50,17 @@ export default {
 </script>
 
 <style lang="less" scoped>
+.swiperdiv /deep/ .swiper-pagination-bullet-active {
+  background: #fff;
+}
 .swiperdiv {
-  width: 100%;
-  // height: 0;
   overflow: hidden;
-  padding-bottom: 34.56rem;
+  width: 100%;
+  height: 0;
+  padding-bottom: 4rem;
   img {
     width: 100%;
   }
 }
 </style>
 
-<style>
-.swiper-pagination-bullet-active {
-  background: #fff;
-}
-</style>
