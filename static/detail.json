@@ -1,0 +1,23 @@
+{
+  "ret": true,
+  "data": {
+    "sightName": "深圳欢乐谷(AAAAA景区)",
+    "bannerImg": "http://img1.qunarzz.com/sight/p0/1810/22/226c137568f18ac0a3.water.jpg_600x330_554b60a8.jpg",
+    "gallaryImgs": ["http://img1.qunarzz.com/sight/p0/1412/b5/c99be07b7b79cfb5900e03a35bc3051f.water.jpg_r_800x800_454faea8.jpg","http://img1.qunarzz.com/sight/p0/1412/42/ab493fd01bc3d2b2b0874fe0b0ae5540.water.jpg_r_800x800_b0342038.jpg","http://img1.qunarzz.com/sight/p0/201404/23/04b92c99462687fa1ba45c1b5ba4ad77.jpg_800x800_70debc93.jpg", "http://img1.qunarzz.com/sight/p0/1709/76/7691528bc7d7ad3ca3.img.png_800x800_9ef05ee7.png"],
+    "categoryList": [{
+        "title": "成人票",
+        "children": [{
+          "title": "成人三馆联票",
+          "children": [{
+            "title": "成人三馆联票 - 某一连锁店销售"
+          }]
+        }]
+      }, {
+        "title": "优惠人群票"
+      }, {
+        "title": "年卡"
+      }, {
+        "title": "特惠票"
+      }]
+  }
+}
